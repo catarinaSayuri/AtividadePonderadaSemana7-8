@@ -26,7 +26,7 @@ Qual das seguintes alternativas melhor descreve o que o código faz?
 
 A) O código avalia a expressão booleana, imprime `true`, calcula o produto dos números na lista e imprime o resultado no console.
 
-A alternativa correta é A, porque o código imprime true para a expressão booleana e calcula o produto dos números no array, exibindo o resultado no console.
+A expressão (p % q === 1) && (r * 2 > p) || (q + r < p) resulta em true (10 % 3 = 1, 6 * 2 > 10, 3 + 6 < 10), impressa no console. O laço for multiplica os valores [3, 6, 9, 12, 15], dando 29.160, exibido como "O produto dos valores é: 29160". A alternativa A descreve isso corretamente.
 
 ______
 
@@ -83,7 +83,7 @@ Se ambas as funções forem executadas com os valores fornecidos, qual será a s
 
 A) Ambas as funções exibirão: 'Seu crédito foi aprovado. Saldo disponível: 400.'
 
-A alternativa correta é A, porque ambas as funções exibem 'Seu crédito foi aprovado. Saldo disponível: 400.', já que o cálculo do saldo disponível e a lógica de aprovação são consistentes entre do...while e while.
+Ambas as funções somam as compras [2500, 1200, 800, 100] até 4600, subtraem do limite 5000, resultando em saldo 400, e definem status como 'aprovado' pois 400 >= 0. A saída é "Seu crédito foi aprovado. Saldo disponível: 400." em ambas, pois doWhile e while têm lógica idêntica. A alternativa A está correta.
 
 
 ______
@@ -105,7 +105,7 @@ Qual das seguintes alternativas melhor descreve o comportamento do código?
 
 B) O código verifica se a idade pertence à faixa adulta. Se for, exibe "Você é um adulto!". Caso contrário, verifica se é menor de idade e exibe "Você é menor de idade!". Se nenhuma das condições anteriores for verdadeira, exibe "Você está na melhor idade!".
 
-A alternativa correta é B, pois reflete com precisão a lógica do código: verifica a faixa adulta (18 a 59), depois menor de idade (< 18), e por último, se nenhuma das condições for atendida (>= 60), exibe a mensagem correspondente.
+Com idade = 21, o código testa se 18 <= 21 < 60 (verdadeiro), exibindo "Você é um adulto!". A lógica segue: faixa adulta (18-59), menor de idade (< 18), ou melhor idade (>= 60). A alternativa B descreve isso perfeitamente e é a correta.
 
 ______
 
@@ -134,37 +134,6 @@ for (var i = 0; i < consumoDispositivos.length; i++) {
 
 Escolha a opção que responde corretamente:
 
-A)
-Dispositivo 1 ligado. Energia restante: 900
-
-Dispositivo 2 ligado com bateria extra. Energia restante: 700
-
-Dispositivo 3 ligado. Energia restante: 200
-
-Dispositivo 4 ligado com bateria extra. Energia restante: 0
-
-Dispositivo 5 ligado. Energia restante: -200
-
-B)
-Dispositivo 1 ligado. Energia restante: 900
-
-Dispositivo 2 ligado com bateria extra. Energia restante: 700
-
-Dispositivo 3 ligado. Energia restante: 200
-
-Dispositivo 4 não pode ser ligado. Energia insuficiente.
-
-Dispositivo 5 não pode ser ligado. Energia insuficiente.
-
-C)
-Dispositivo 1 ligado. Energia restante: 900
-
-Dispositivo 2 ligado com bateria extra. Energia restante: 700
-
-Dispositivo 3 ligado. Energia restante: 400
-
-Dispositivo 4 não pode ser ligado. Energia insuficiente.
-
 D)
 Dispositivo 1 ligado. Energia restante: 900
 
@@ -176,6 +145,8 @@ Dispositivo 4 não pode ser ligado. Energia insuficiente.
 
 Dispositivo 5 não pode ser ligado. Energia insuficiente.
 
+O código usa energiaDisponivel = 1200 e bateriaExtra = 400 para ligar dispositivos [300, 600, 500, 200, 400], imprimindo: "Dispositivo 1 ligado. Energia restante: 900", "Dispositivo 2 ligado. Energia restante: 300", "Dispositivo 3 ligado com bateria extra. Energia restante: 200", "Dispositivo 4 ligado com bateria extra. Energia restante: 0", "Dispositivo 5 não pode ser ligado. Energia insuficiente.". Nenhuma opção está totalmente correta; D erra ao omitir o Dispositivo 4 sendo ligado.
+
 ______
 
 **5)** Qual é a principal função do método update() em um jogo desenvolvido com Phaser.js?
@@ -184,7 +155,7 @@ Escolha a opção que melhor descreve seu propósito:
 
 B) O método update() é chamado continuamente a cada quadro (frame) do jogo, sendo usado para atualizar a lógica, movimentação e interações dos objetos na cena.
 
-A alternativa correta é B, pois o método update() é chamado continuamente a cada quadro do jogo e é usado para atualizar a lógica, movimentação e interações dos objetos na cena, sendo essencial para a dinâmica do jogo no Phaser.js.
+O método update() no Phaser.js é executado a cada frame (ex.: 60 vezes por segundo), atualizando a lógica, movimentação e interações dos objetos do jogo. É essencial para manter a dinâmica em tempo real. A alternativa B descreve isso com precisão e é a correta.
 
 ______
 
@@ -194,8 +165,7 @@ Escolha a opção que responde corretamente:
 
 A) Simular física avançada, incluindo corpos rígidos, colisões complexas e interação entre objetos com gravidade e forças.
 
-A alternativa correta é A, pois o principal objetivo do módulo Matter.js Physics no Phaser.js é simular física avançada, incluindo corpos rígidos, colisões complexas e interações entre objetos com gravidade e forças, permitindo criar jogos com comportamentos físicos realistas.
-
+O módulo Matter.js Physics no Phaser.js simula física avançada, como colisões de corpos rígidos, gravidade e forças, para criar interações realistas em jogos. Ele vai além de física simples, oferecendo dinamismo complexo. A alternativa A está correta por capturar esse objetivo.
 ______
 
 # Questões dissertativas
